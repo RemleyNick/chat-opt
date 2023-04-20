@@ -5,12 +5,17 @@
 body {
     text-align: center;
 }
-.box {
-    border: black 1px solid;
-    width: fit-content;
-    margin-top: 5px;
+h1 {
+    color: darkcyan;
 }
 h3 {
     color: crimson;
     text-align: center;
+}
+.box {
+    border: black 1px solid;
+    width: fit-content;
+    margin-top: 5px;
+    padding: 5px;
+    align-self: center;
 }
