@@ -17,5 +17,7 @@ h3 {
     width: fit-content;
     margin-top: 5px;
     padding: 5px;
+    display: flex;
+    justify-content: center;
     align-self: center;
 }
