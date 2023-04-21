@@ -3,7 +3,10 @@
 	font-family: 'Montserrat', sans-serif;
 }
 body {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 h1 {
     color: darkcyan;
@@ -11,13 +14,12 @@ h1 {
 h3 {
     color: crimson;
     text-align: center;
+    text-decoration: underline;
 }
 .box {
     border: black 1px solid;
-    width: fit-content;
+    border-radius: 5px;
+    width: 50%;
     margin-top: 5px;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 2px 5px;
 }
