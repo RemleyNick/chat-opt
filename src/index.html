@@ -7,15 +7,16 @@
 </head>
 <body>
     <h1>Chat OPT</h1>
-    <form action="" method="get">
+    <form action="" method="get" name="form">
         <label for="name">Name: </label>
-        <input type="text" name="name" id="name" placeholder="Your Name"/>
+        <input type="text" name="name" id="name" placeholder="Your Name" required/>
         <label for="message">Message: </label>
         <input type="text" name="message" id="message" placeholder="Your Message"/>
-        <button type="submit">Submit</button>
+        <button type="submit" class="button">Submit</button>
     </form>
     <div class="box" id="chat-history">
        <h3>Chat History Here</h3>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
