@@ -1,5 +1,15 @@
-const form = document.querySelector('form');
+///////////////////////////////////
+//backend
+////////////////////////////////////
+const users = {"zzz": "Nick",
+              "123": "John"
+            }
+function login() {
+  return "zzz";
+}
+/////////////////////////////////////
 const chatHistory = document.getElementById('chat-history');
+const form = document.querySelector('form');
 
 form.addEventListener('submit', function(event) {
   //prevent default submit
@@ -9,12 +19,22 @@ form.addEventListener('submit', function(event) {
   const name = document.getElementById('name').value;
   const message = document.getElementById('message').value;
 
-  //add to chat history
-  const addChat = document.createElement('div');
-  addChat.innerHTML = '<p>' + '<strong>' + name + '</strong>' + ': ' + message + '</p>';
-  chatHistory.appendChild(addChat);
+  
+  if (users["zzz"]) {
+   displayNameChat({name, message})
+  }
 
-  //clear inputs
-  document.getElementById('name').value = "";
-  document.getElementById('message').value = "";
 });
+
+function displayNameChat({name, message}) {
+  console.log(name, message);
+
+    //add to chat history
+    const addChat = document.createElement('div');
+    addChat.innerHTML = '<p>' + '<strong>' + name + '</strong>' + ': ' + message + '</p>';
+    chatHistory.appendChild(addChat);
+  
+    //clear inputs
+    // document.getElementById('name').value = "";
+    document.getElementById('message').value = "";
+}
