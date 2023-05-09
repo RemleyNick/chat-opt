@@ -9,9 +9,6 @@ form.addEventListener('submit', function(event) {
   const name = document.getElementById('name').value;
   const message = document.getElementById('message').value;
 
-  //create alert
-  alert(name + ": " + message);
-
   //add to chat history
   const addChat = document.createElement('div');
   addChat.innerHTML = '<p>' + '<strong>' + name + '</strong>' + ': ' + message + '</p>';
