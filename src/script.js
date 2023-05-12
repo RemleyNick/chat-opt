@@ -34,7 +34,6 @@ function displayNameChat({name, message}) {
     addChat.innerHTML = '<p>' + '<strong>' + name + '</strong>' + ': ' + message + '</p>';
     chatHistory.appendChild(addChat);
   
-    //clear inputs
-    // document.getElementById('name').value = "";
+    //clear message input
     document.getElementById('message').value = "";
 }
